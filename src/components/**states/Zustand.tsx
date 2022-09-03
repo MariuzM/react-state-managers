@@ -8,7 +8,7 @@ export const Zustand = () => {
   const countMinusSet = useStoreZustand((s) => s.countMinusSet);
 
   return (
-    <Block>
+    <Block title="Zustand">
       {count}
       <Button name="+" onClick={countPlusSet} />
       <Button name="-" onClick={countMinusSet} />
