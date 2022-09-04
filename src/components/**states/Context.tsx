@@ -1,6 +1,6 @@
 import { useContext, useState } from 'react';
 
-import { CountContext } from '../../states/context/useStoreContext';
+import { CountContext } from '../../states/useContext';
 import { Block } from '../Block';
 import { Button } from '../Button';
 

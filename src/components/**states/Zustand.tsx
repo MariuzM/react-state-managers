@@ -1,4 +1,4 @@
-import { useStoreZustand } from '../../states/zustand/useStoreZustand';
+import { useStoreZustand } from '../../states/useStoreZustand';
 import { Block } from '../Block';
 import { Button } from '../Button';
 
