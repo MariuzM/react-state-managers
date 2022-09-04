@@ -1,11 +1,27 @@
-import { Block } from '../Block';
+import { useContext, useState } from 'react';
 
-export const Context = () => {
+import { CountContext } from '../../states/context/useStoreContext';
+import { Block } from '../Block';
+import { Button } from '../Button';
+
+const Context = () => {
+  const { count, countSet } = useContext(CountContext);
+
   return (
     <Block title="Context">
-      {/* {count} */}
-      {/* <Button name="+" onClick={countPlusSet} /> */}
-      {/* <Button name="-" onClick={countMinusSet} /> */}
+      <div>{count}</div>
+      <Button name="+" onClick={() => countSet((s) => s + 1)} />
+      <Button name="-" onClick={() => countSet((s) => s - 1)} />
     </Block>
+  );
+};
+
+export const ContextApp = () => {
+  const [count, countSet] = useState(0);
+
+  return (
+    <CountContext.Provider value={{ count, countSet }}>
+      <Context />
+    </CountContext.Provider>
   );
 };
