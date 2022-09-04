@@ -10,8 +10,8 @@ const Context = () => {
   return (
     <Block title="Context">
       <div>{count}</div>
-      <Button name="+" onClick={() => countSet((s) => s + 1)} />
-      <Button name="-" onClick={() => countSet((s) => s - 1)} />
+      <Button name="+" onClick={() => countSet((state) => state + 1)} />
+      <Button name="-" onClick={() => countSet((state) => state - 1)} />
     </Block>
   );
 };

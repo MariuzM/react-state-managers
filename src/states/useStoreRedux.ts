@@ -1,6 +1,6 @@
 import { configureStore, createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-export type TypeCountState = {
+type TypeCountState = {
   count: number;
 };
 
