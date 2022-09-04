@@ -1,4 +1,5 @@
 import { ContextApp } from './components/**states/Context';
+import { JotaiApp } from './components/**states/Jotai';
 import { ReduxApp } from './components/**states/Redux';
 import { XState } from './components/**states/XState';
 import { ZustandApp } from './components/**states/Zustand';
@@ -9,6 +10,7 @@ export const App = () => {
       <ZustandApp />
       <ReduxApp />
       <XState />
+      <JotaiApp />
       <ContextApp />
     </div>
   );

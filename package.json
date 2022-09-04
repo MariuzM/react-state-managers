@@ -10,6 +10,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",
     "@xstate/react": "^3.0.1",
+    "jotai": "^1.8.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.2",
