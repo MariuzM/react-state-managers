@@ -13,12 +13,18 @@ const countSlice = createSlice({
   name: 'count',
   initialState: initialState,
   reducers: {
-    countPlusSet: (state, action: PayloadAction<number>) => {
-      state.count = action.payload;
+    countPlusSet: (state) => {
+      state.count = state.count + 1;
     },
-    countMinusSet: (state, action: PayloadAction<number>) => {
-      state.count = action.payload;
+    countMinusSet: (state) => {
+      state.count = state.count - 1;
     },
+    // countPlusSet: (state, action: PayloadAction<number>) => {
+    //   state.count = action.payload;
+    // },
+    // countMinusSet: (state, action: PayloadAction<number>) => {
+    //   state.count = action.payload;
+    // },
   },
 });
 

@@ -11,8 +11,10 @@ export const Redux = () => {
   return (
     <Block title="Redux">
       {count}
-      <Button name="+" onClick={() => dispatch(countPlusSet(count + 1))} />
-      <Button name="-" onClick={() => dispatch(countMinusSet(count - 1))} />
+      <Button name="+" onClick={() => dispatch(countPlusSet())} />
+      <Button name="-" onClick={() => dispatch(countMinusSet())} />
+      {/* <Button name="+" onClick={() => dispatch(countPlusSet(count + 1))} /> */}
+      {/* <Button name="-" onClick={() => dispatch(countMinusSet(count - 1))} /> */}
     </Block>
   );
 };
