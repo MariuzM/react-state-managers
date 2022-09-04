@@ -1,4 +1,4 @@
-import { assign, createMachine, interpret } from 'xstate';
+import { assign, createMachine } from 'xstate';
 
 type TypeCountState = {
   count: number;
@@ -21,5 +21,3 @@ export const useStoreXState = createMachine({
     },
   },
 });
-
-export const countService = interpret(useStoreXState).start();
